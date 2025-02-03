@@ -9,7 +9,7 @@ size = len(word)
 print('Original word is', word)
 print('Printing only even index chars:')
 
-for i in range(0, size - 1, 2):
+for i in range(0, size, 2):
     print(i, word[i])
 
 # I don't understand the structure of the "for i in range" is i the name of the loop?
