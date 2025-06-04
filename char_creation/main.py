@@ -7,6 +7,9 @@ char_name = input()
 
 print(f"Hello, {char_name}")
 
+def modifier_calc(stat):
+    return (stat - 10) / 2
+
 stats = {'STR': 8, 
          'DEX': 8, 
          'CON': 8, 
@@ -35,5 +38,9 @@ for stat, score in stats.items():
                 print("you gotta choose an available score")
         except ValueError:
             print("no text, try again.")
+
+score_mods = []
+
 for stat, score in stats.items():
-        print(f"{stat}: {score}\n")
+    print(f"{stat}: {score}")
+
